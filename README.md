@@ -13,3 +13,10 @@ Each app, by default, has access only to the components that it requires to do i
 <li> An app can request permission to access device data such as the device's location, camera, and Bluetooth connection. The user has to explicitly grant these permissions</li>
 
 <li> It's possible to arrange for two apps to share the same Linux user ID, in which case they are able to access each other's files. To conserve system resources, apps with the same user ID can also arrange to run in the same Linux process and share the same VM. The apps must also be signed with the same certificate. </li>
+
+<h3> There are four different types of app components: </h3>
+
+<li>Activities </li>
+<li> Services </li>
+<li> Broadcast receivers </li>
+<li> Content providers </li>
