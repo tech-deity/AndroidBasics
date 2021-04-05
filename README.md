@@ -20,3 +20,7 @@ Each app, by default, has access only to the components that it requires to do i
 <li> Services </li>
 <li> Broadcast receivers </li>
 <li> Content providers </li>
+
+<h2> Activities </h2>
+
+
