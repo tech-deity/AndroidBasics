@@ -22,5 +22,6 @@ Each app, by default, has access only to the components that it requires to do i
 <li> Content providers </li>
 
 <h2> Activities </h2>
+An activity is the entry point for interacting with the user. It represents a single screen with a user interface. 
 
 
