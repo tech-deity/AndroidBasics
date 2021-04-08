@@ -46,3 +46,15 @@ With Android 5.0 (API level 21) and later, you can use the **JobScheduler** clas
 You can initiate a broadcast by passing an Intent to methods such as **sendBroadcast()** ,  **sendOrderedBroadcast()**, or **sendStickyBroadcast()**.
 
 You can perform a query to a content provider by calling **query()** on a **ContentResolver** .
+
+
+
+ <h2> The manifest does a number of things in addition to declaring the app's components, such as the following:  </h2>
+
+Identifies any user permissions the app requires, such as Internet access or read-access to the user's contacts.
+
+Declares the minimum API Level required by the app, based on which APIs the app uses.
+
+Declares hardware and software features used or required by the app, such as a camera, bluetooth services, or a multitouch screen.
+
+Declares API libraries the app needs to be linked against (other than the Android framework APIs), such as the Google Maps library.
