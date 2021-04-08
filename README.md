@@ -23,5 +23,6 @@ Each app, by default, has access only to the components that it requires to do i
 
 <h2> Activities </h2>
 An activity is the entry point for interacting with the user. It represents a single screen with a user interface. 
+For example, an email app might have one activity that shows a list of new emails, another activity to compose an email, and another activity for reading emails. Although the activities work together to form a cohesive user experience in the email app, each one is independent of the others. As such, a different app can start any one of these activities if the email app allows it. For example, a camera app can start the activity in the email app that composes new mail to allow the user to share a picture.
 
 
