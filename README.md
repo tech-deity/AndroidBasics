@@ -35,7 +35,6 @@ A broadcast receiver is a component that enables the system to deliver events to
 
 A content provider manages a shared set of app data that you can store in the file system, in a SQLite database, on the web, or on any other persistent storage location that your app can access. Through the content provider, other apps can query or modify the data if the content provider allows it. For example, the Android system provides a content provider that manages the user's contact information. As such, any app with the proper permissions can query the content provider, such as ContactsContract.Data, to read and write information about a particular person. 
 
-
-
+<h3>Three of the four component types—activities, services, and broadcast receivers—are activated by an asynchronous message called an intent </h3>
 
 
