@@ -40,6 +40,9 @@ A content provider manages a shared set of app data that you can store in the fi
 There are separate methods for activating each type of component:
 
 You can start an activity or give it something new to do by passing an Intent to **startActivity** or **startActivityForResult()** (when you want the activity to return a result).
+
 With Android 5.0 (API level 21) and later, you can use the **JobScheduler** class to schedule actions. For earlier Android versions, you can start a service (or give new instructions to an ongoing service) by passing an Intent to startService(). You can bind to the service by passing an Intent to bindService().
+
 You can initiate a broadcast by passing an Intent to methods such as **sendBroadcast()** ,  **sendOrderedBroadcast()**, or **sendStickyBroadcast()**.
+
 You can perform a query to a content provider by calling **query()** on a **ContentResolver** .
