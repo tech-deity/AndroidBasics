@@ -37,4 +37,9 @@ A content provider manages a shared set of app data that you can store in the fi
 
 <h3>Three of the four component types—activities, services, and broadcast receivers—are activated by an asynchronous message called an intent  , The content resolver handles all direct transactions with the content provider so that the component that's performing transactions with the provider doesn't need to and instead calls methods on the ContentResolver object. This leaves a layer of abstraction between the content provider and the component requesting information (for security). </h3>
 
+There are separate methods for activating each type of component:
 
+You can start an activity or give it something new to do by passing an Intent to <h3> startActivity()  </h3> or <h3> startActivityForResult() </h3> (when you want the activity to return a result).
+With Android 5.0 (API level 21) and later, you can use the <h3>JobScheduler</h3> class to schedule actions. For earlier Android versions, you can start a service (or give new instructions to an ongoing service) by passing an Intent to startService(). You can bind to the service by passing an Intent to bindService().
+You can initiate a broadcast by passing an Intent to methods such as <h3> sendBroadcast()</h3> , <h3> sendOrderedBroadcast()</h3>, or <h3> sendStickyBroadcast() </h3>.
+You can perform a query to a content provider by calling <h3> query() </h3> on a <h3> ContentResolver</h3>.
