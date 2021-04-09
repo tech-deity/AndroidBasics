@@ -58,3 +58,10 @@ Declares the minimum API Level required by the app, based on which APIs the app 
 Declares hardware and software features used or required by the app, such as a camera, bluetooth services, or a multitouch screen.
 
 Declares API libraries the app needs to be linked against (other than the Android framework APIs), such as the Google Maps library.
+
+<h2> what is R Class In Android ? </h2>
+
+Android R.java is an auto-generated file by aapt (Android Asset Packaging Tool) that contains resource IDs for all the resources of res/ directory.
+If you create any component in the activity_main.xml file, id for the corresponding component is automatically created in this file. This id can be used in the activity source file to perform any action on the component.
+
+
