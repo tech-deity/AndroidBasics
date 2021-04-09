@@ -20,7 +20,9 @@ TO  Declare that your activity handles a configuration change edit he appropriat
  example 
   
   <activity android:name=".MyActivity"
+  
           android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+          
           android:label="@string/app_name">
           
           
