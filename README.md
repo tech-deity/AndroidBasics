@@ -65,3 +65,26 @@ Android R.java is an auto-generated file by aapt (Android Asset Packaging Tool) 
 If you create any component in the activity_main.xml file, id for the corresponding component is automatically created in this file. This id can be used in the activity source file to perform any action on the component.
 
 
+<h2> what is dex </h2>
+
+One of the most remarkable features of the Dalvik Virtual Machine (the workhorse under the Android system) is that it does not use Java bytecode. Instead, a homegrown format called DEX was introduced and not even the bytecode instructions are the same as Java bytecode instructions.
+
+Compiled Android application code file.
+Android programs are compiled into .dex (Dalvik Executable) files, which are in turn zipped into a single .apk file on the device. .dex files can be created by automatically translating compiled applications written in the Java programming language.
+
+<h3> DeX file formate </h3>
+1. File Header
+ 2. String Table
+ 3. Class List
+ 4. Field Table
+ 5. Method Table
+ 6. Class Definition Table
+ 7. Field List
+ 8. Method List
+ 9. Code Header
+10. Local Variable List
+
+dex files are similar to java class files, but they were run under the Dalkvik Virtual Machine (DVM) on older Android versions, and compiled at install time on the device to native code with ART on newer Android versions.
+
+
+
